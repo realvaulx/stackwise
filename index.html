@@ -4,8 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#12171a">
-<title>Stackwise</title>
-<meta name="description" content="Minecraft build material tracker: stacks, raw materials and crafting steps. Not affiliated with Mojang or Microsoft.">
+<title>Stackwise: Minecraft Material List Tracker &amp; Litematica Import</title>
+<meta name="description" content="Free Minecraft build material tracker. Import a Litematica material list, see every amount in stacks and get the raw materials and crafting steps you still need (Java 1.21.11). Not affiliated with Mojang or Microsoft.">
+<link rel="canonical" href="https://realvaulx.github.io/stackwise/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stackwise">
+<meta property="og:title" content="Stackwise: Minecraft Material List Tracker">
+<meta property="og:description" content="Import Litematica material lists, track amounts in stacks and work out the raw materials and crafting steps for your Minecraft builds.">
+<meta property="og:url" content="https://realvaulx.github.io/stackwise/">
+<meta property="og:image" content="https://realvaulx.github.io/stackwise/docs/banner.svg">
+<meta property="og:image:alt" content="Stackwise logo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stackwise: Minecraft Material List Tracker">
+<meta name="twitter:description" content="Import Litematica material lists, track amounts in stacks and work out the raw materials and crafting steps for your Minecraft builds.">
+<meta name="twitter:image" content="https://realvaulx.github.io/stackwise/docs/banner.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Stackwise",
+  "url": "https://realvaulx.github.io/stackwise/",
+  "description": "Minecraft build material tracker: import Litematica material lists, see amounts in stacks, and calculate raw materials and crafting steps for Minecraft Java 1.21.11.",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Any (web browser)",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
 <link rel="icon" href="img/favicon.ico" sizes="any">
@@ -14,6 +43,10 @@
 </head>
 <body>
 <div class="wrap" id="app"></div>
+<noscript>
+<h1>Stackwise: Minecraft material list tracker</h1>
+<p>Stackwise keeps track of the materials for your Minecraft builds. Import a Litematica material list, see every amount in stacks, tick off what you have, and let the Raw materials tab work out what is left to gather and craft. It uses the recipes of Minecraft Java 1.21.11 and needs JavaScript to run.</p>
+</noscript>
 <script src="data/items.js"></script>
 <script src="data/recipes.js"></script>
 <script src="js/state.js"></script>
