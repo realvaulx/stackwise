@@ -57,7 +57,7 @@ Progress is saved in your browser (`localStorage`), so use the same browser and 
 
 ## Limits
 
-- Recipes and items are for Minecraft Java 1.21.11 only.
+- Recipes and items are up to Minecraft 1.21.11.
 - Items from an import that Stackwise does not know are kept with a `?` icon and the default stack size of 64.
 - Progress lives in one browser. Tabs of the same browser stay in sync. Use the backup to move it to another browser.
 - If the browser cannot save (private mode or full storage), Stackwise shows a warning so you can copy a backup.
@@ -79,11 +79,10 @@ js/
 data/
   items.js      item names and stack sizes
   recipes.js    recipes
-  sample.js     the example list
 icons/          one PNG per item, named with the Minecraft id
-fonts/          Minecraft font
-img/            logo and background
-docs/           banner and screenshots for this README
+fonts/          Minecraft fonts
+img/            icons and background
+docs/           elements for this README
 ```
 
 The scripts are plain files loaded in order from `index.html`, and they share one `SW` object, so there are no modules and it also works when opened straight from disk. Everything lives in one state object that is saved to `localStorage`. The planner (`js/planner.js`) walks the recipes from your items down to raw materials, subtracts what you already have, and counts the crafts needed at each step.
@@ -96,4 +95,4 @@ Stackwise is released under the [MIT License](LICENSE). The license covers the S
 
 Stackwise is not affiliated with Mojang or Microsoft. Minecraft textures and the Minecraft font belong to Mojang Studios.
 
-Item icons by [MC Item Gallery](https://mcitemgallery.com/).
+Item icons from [MC Item Gallery](https://mcitemgallery.com/).
